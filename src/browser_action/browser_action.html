@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    
+<link rel="stylesheet" href="/css/mainStyle.css">
+    
+<head>
+    <title>Crypto Tracker</title>
+    
+    <link rel="stylesheet" type="text/css" href="/js/jquery.gridster.min.css">
+<script src="/js/jquery/jquery.min.js"></script> 
+<script src="/js/main.js"></script>
+    <script src="/js/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
+    
+</head>
+    
+<body id="bodyy" style="overflow: hidden; background-color:#37393b; width:450px; height:180px; padding:0px; margin:0px;">
+     <input style="float:right; margin:10px;" type="hidden" id="refreshButton" value="Reload"/>
+    
+<div id="mainContainer">
+
+<div>
+<button style="font-size: 20px; margin-left: 5px;" id="addButton">+</button>
+<select style="margin-left: 10px;" id="selectedCurr">
+    <option selected disabled hidden>AUD</option>
+    <option >AUD</option>
+    <option >USD</option>
+    <option >NZD</option>
+</select>  
+</div>    
+    
+<div style="overflow: hidden;" class="gridster">
+<ul id="masterList">
+    
+<li id= "Xbt" class="gridsterSquare" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <div id="squareContentsDiv">
+        <select selected="Xbt" class ="coinSelectDropdown">
+              <option value="" selected disabled hidden>Xbt</option>
+            <option >Xbt</option>
+            <option >Eth</option>
+            <option >Xrp</option>
+            <option >Link</option>
+            <option >Usdt</option>
+            <option >Usdc</option>
+            <option >Bch</option>
+            <option >Bsv</option>
+            <option >Ltc</option>
+            <option >Mkr</option>
+            <option >Dai</option>
+            <option >Comp</option>
+            <option >Snx</option>
+            <option >Eos</option>
+            <option >Xlm</option>
+            <option >Etc</option>
+            <option >Bat</option>
+            <option >Pmgt</option>
+            <option >Yfi</option>
+            <option >Aave</option>
+            <option >Knc</option>
+            <option >Zrx</option>
+            <option >Omg</option>
+            <option >Gnt</option>
+            <option disabled>Doge</option>
+        </select>  
+        <p class="unselectable" style="margin:0px; padding:0px" id= "generalStatsName-coin1"></p>  
+        <div style="overflow: hidden; height: 50%; width: 50%; float:left;">
+            <img class= "coinImage" style="height: 50%; width: 50%; z-index: -1; position: absolute; padding:0px; margin-top:0px;" src="/icons/Eth.svg">
+        </div>
+        <p style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 30px 0px 0px 0px; text-align: center; font-size: 18px;" class="coinValue"></p>     
+        <p class="currentCurrency" style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 0px 0px 0px 0px; text-align: center; font-size: 7px;">AUD</p>
+
+    </div>
+</li>
+<li id= "Eth"  class="gridsterSquare" data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+    <div id="squareContentsDiv">
+        <select selected="Eth" class ="coinSelectDropdown">
+            <option value="" selected disabled hidden>Eth</option>
+            <option >Xbt</option>
+            <option >Eth</option>
+            <option >Xrp</option>
+            <option >Link</option>
+            <option >Usdt</option>
+            <option >Usdc</option>
+            <option >Bch</option>
+            <option >Bsv</option>
+            <option >Ltc</option>
+            <option >Mkr</option>
+            <option >Dai</option>
+            <option >Comp</option>
+            <option >Snx</option>
+            <option >Eos</option>
+            <option >Xlm</option>
+            <option >Etc</option>
+            <option >Bat</option>
+            <option >Pmgt</option>
+            <option >Yfi</option>
+            <option >Aave</option>
+            <option >Knc</option>
+            <option >Zrx</option>
+            <option >Omg</option>
+            <option >Gnt</option>
+            <option disabled >Doge</option>
+        </select>  
+        <p class="unselectable" style="margin:0px; padding:0px" id= "generalStatsName-coin1"></p>  
+        <div style="overflow: hidden; height: 50%; width: 50%; float:left;">
+            <img class= "coinImage" style="height: 50%; width: 50%; z-index: -1; position: absolute; padding:0px; margin-top:0px;" src="/icons/Eth.svg">
+        </div>
+        <p style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 30px 0px 0px 0px; text-align: center; font-size: 18px;" class="coinValue"></p>     
+        <p class="currentCurrency"  style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 0px 0px 0px 0px; text-align: center; font-size: 7px;">AUD</p>
+
+    </div>
+</li>
+<li id= "Xrp"  class="gridsterSquare" data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+    <div id="squareContentsDiv">
+        <select selected="Eth" class ="coinSelectDropdown">
+            <option value="" selected disabled hidden>Xrp</option>
+            <option >Xbt</option>
+            <option >Eth</option>
+            <option >Xrp</option>
+            <option >Link</option>
+            <option >Usdt</option>
+            <option >Usdc</option>
+            <option >Bch</option>
+            <option >Bsv</option>
+            <option >Ltc</option>
+            <option >Mkr</option>
+            <option >Dai</option>
+            <option >Comp</option>
+            <option >Snx</option>
+            <option >Eos</option>
+            <option >Xlm</option>
+            <option >Etc</option>
+            <option >Bat</option>
+            <option >Pmgt</option>
+            <option >Yfi</option>
+            <option >Aave</option>
+            <option >Knc</option>
+            <option >Zrx</option>
+            <option >Omg</option>
+            <option >Gnt</option>
+            <option disabled >Doge</option>
+        </select>  
+        <p class="unselectable" style="margin:0px; padding:0px" id= "generalStatsName-coin1"></p>  
+        <div style="overflow: hidden; height: 50%; width: 50%; float:left;">
+            <img class= "coinImage" style="height: 50%; width: 50%; z-index: -1; position: absolute; padding:0px; margin-top:0px;" src="/icons/Eth.svg">
+        </div>
+        <p style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 30px 0px 0px 0px; text-align: center; font-size: 18px;" class="coinValue"></p>     
+        <p class="currentCurrency"  style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 0px 0px 0px 0px; text-align: center; font-size: 7px;">AUD</p>
+
+    </div>
+</li>    
+<li id= "Bat"  class="gridsterSquare" data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+    <div id="squareContentsDiv">
+        <select selected="Eth" class ="coinSelectDropdown">
+            <option value="" selected disabled hidden>Bat</option>
+            <option >Xbt</option>
+            <option >Eth</option>
+            <option >Xrp</option>
+            <option >Link</option>
+            <option >Usdt</option>
+            <option >Usdc</option>
+            <option >Bch</option>
+            <option >Bsv</option>
+            <option >Ltc</option>
+            <option >Mkr</option>
+            <option >Dai</option>
+            <option >Comp</option>
+            <option >Snx</option>
+            <option >Eos</option>
+            <option >Xlm</option>
+            <option >Etc</option>
+            <option >Bat</option>
+            <option >Pmgt</option>
+            <option >Yfi</option>
+            <option >Aave</option>
+            <option >Knc</option>
+            <option >Zrx</option>
+            <option >Omg</option>
+            <option >Gnt</option>
+            <option disabled >Doge</option>
+        </select>  
+        <p class="unselectable" style="margin:0px; padding:0px" id= "generalStatsName-coin1"></p>  
+        <div style="overflow: hidden; height: 50%; width: 50%; float:left;">
+            <img class= "coinImage" style="height: 50%; width: 50%; z-index: -1; position: absolute; padding:0px; margin-top:0px;" src="/icons/Eth.svg">
+        </div>
+        <p style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 30px 0px 0px 0px; text-align: center; font-size: 18px;" class="coinValue"></p>     
+        <p class="currentCurrency" -[] style="text-shadow:0px 0px 5px black,0px 1px 5px black,1px 0px 5px black,1px 1px 5px black,0px -1px 5px black,-1px 0px 5px black,-1px -1px 5px black,-1px 1px 5px black,1px -1px 5px black; margin:0px; padding: 0px 0px 0px 0px; text-align: center; font-size: 7px;">AUD</p>
+
+    </div>
+</li> 
+    
+    
+</ul>
+</div>
+
+
+    
+    
+</div>
+    
+    
+    
+
+</body>   
+    
+</html>

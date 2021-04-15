@@ -1,0 +1,88 @@
+
+.barContainer { 
+    background-color: rgb(192, 192, 192); 
+    width: 100%; 
+        border-radius: 15px;
+    margin: 0px;
+} 
+
+.bar-coin1 { 
+    background-color: rgb(200, 55, 55); 
+    color: white; 
+    padding: 0px; 
+    text-align: center; 
+    font-size: 13px; 
+    border-radius: 15px; 
+    width: 0%;
+} 
+
+.bar-coin1 { 
+    background-color: rgb(15, 35, 175); 
+    color: white; 
+    padding: 0px; 
+    text-align: center; 
+    font-size: 13px; 
+    border-radius: 15px;  
+    width: 0%;
+} 
+
+.title{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#mainContainer{
+    color:white;
+    padding:10px;
+}
+
+
+
+
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.gridsterSquare{
+    visibility: hidden;
+text-align: center;
+list-style-type: none;
+padding: 0px;
+background-color: grey;
+    border-style: solid;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+
+
+#bodyy::-webkit-scrollbar {
+  display: none;
+}
+
+
+#addButton{
+  background-color: #ababab; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+
+
+
+
+
