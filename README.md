@@ -5,4 +5,4 @@ Instant live crypto prices in a chrome extension.
 To Do:
 - Add more currencies (from other exchanges).
 - Add live charts when a tracker is expanded.
-- Fix position and title count saving.
+- Fix position and tile position saving.
